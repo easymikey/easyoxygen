@@ -5,7 +5,8 @@
   "main": "brain-games.js",
   "bin": {
     "oxygen": "scr/bin/brain-games.js",
-    "brain-games": "dist/bin/brain-games.js"
+    "brain-games": "dist/bin/brain-games.js",
+
   },
   "files": [
     "dist"

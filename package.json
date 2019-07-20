@@ -4,7 +4,7 @@
   "description": "\"my first project\"",
   "main": "brain-games.js",
   "bin": {
-      "oxygen": "scr/bin/brain-games.js"
+    "oxygen": "scr/bin/brain-games.js"
   },
   "scripts": {
     "test": "\"make test\""
@@ -21,5 +21,13 @@
   "bugs": {
     "url": "https://github.com/easymikey/frontend-project-lvl1/issues"
   },
-  "homepage": "https://github.com/easymikey/frontend-project-lvl1#readme"
+  "homepage": "https://github.com/easymikey/frontend-project-lvl1#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.5.5",
+    "@babel/core": "^7.5.5",
+    "@babel/node": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "install": "^0.13.0",
+    "npm": "^6.10.1"
+  }
 }

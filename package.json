@@ -7,7 +7,9 @@
     "oxygen": "scr/bin/brain-games.js"
   },
   "scripts": {
-    "test": "\"make test\""
+    "build": "NODE_ENV=production babel src --out-dir dist --source-maps inline",
+    "prepublishOnly": "npm run build"
+
   },
   "repository": {
     "type": "git",

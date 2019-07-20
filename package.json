@@ -4,7 +4,8 @@
   "description": "\"my first project\"",
   "main": "brain-games.js",
   "bin": {
-    "oxygen": "scr/bin/brain-games.js"
+    "oxygen": "scr/bin/brain-games.js",
+    "brain-games": "dist/bin/brain-games.js"
   },
   "scripts": {
     "build": "NODE_ENV=production babel src --out-dir dist --source-maps inline",

@@ -7,6 +7,9 @@
     "oxygen": "scr/bin/brain-games.js",
     "brain-games": "dist/bin/brain-games.js"
   },
+  "files": [
+   "dist"
+ ],
   "scripts": {
     "build": "NODE_ENV=production babel src --out-dir dist --source-maps inline",
     "prepublishOnly": "npm run build"

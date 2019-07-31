@@ -4,8 +4,8 @@ install:
 start:
 	npx babel-node src/bin/bramain-even.js
 
-publish --dry-run:
-	npm publish --dry-run
+publish:
+	npm publish
 
 lint:
 	npx eslint .

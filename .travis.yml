@@ -6,3 +6,9 @@ node_js:
 
 script:
   - make lint
+
+notifications:
+  email:
+    - avdeev2033@icloud.com
+  on_success: never # default: change
+  on_failure: always # default: always

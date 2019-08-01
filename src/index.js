@@ -12,22 +12,21 @@ const welcome = (str) => {
   console.log('');
 };
 
-const getRandom = max => Math.floor(Math.random() * Math.floor(max));
-const isEven = num => num % 2 === 0;
-
-const getAnswer = (name, attempt) => {
+const getAnswer = (name, attempt, generateRule) => {
   const counter = (i) => {
     if (i === attempt) {
       console.log(`Congratulations,${name}!`);
       return;
     }
-    const number = getRandom(100);
-    const correctAnswer = isEven(number) ? 'yes' : 'no';
-    console.log(`Question: ${number}`);
+
+    const [questionForUser, correctAnswer] = generateRule();
+    console.log(`Question: ${questionForUser}`);
     const answer = readlineSync.question('Your answer: ');
-    console.log('');
+
 
     if (correctAnswer === answer) {
+      console.log('Correct!');
+      console.log('');
       counter(i + 1);
     } else {
       console.log(`'${answer}' is wrong answer ;(. Correct answer is '${correctAnswer}'`);
@@ -37,18 +36,14 @@ const getAnswer = (name, attempt) => {
 
   counter(0);
 };
-const ruleOfGame = {
-  rule: 'Answer "yes" if number even therwise answer "no"',
-  attempt: 3,
-};
 
-const runGame = () => {
+const runGame = (ruleOfGame, generateRule) => {
   const { rule, attempt } = ruleOfGame;
   welcome(rule);
   const getName = userName();
   console.log(`Hello, ${getName}!`);
   console.log('');
-  getAnswer(getName, attempt);
+  getAnswer(getName, attempt, generateRule);
 };
 
 export default runGame;

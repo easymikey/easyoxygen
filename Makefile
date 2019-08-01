@@ -2,7 +2,9 @@ install:
 	npm install
 
 start:
-	npx babel-node src/bin/bramain-even.js
+	npx babel-node src/bin/brain-even.js
+start1:
+	npx babel-node src/bin/brain-calc.js
 
 publish:
 	npm publish

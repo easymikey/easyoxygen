@@ -4,7 +4,7 @@ const ruleOfGame = {
   rule: 'Find the greatest common divisor of given number.',
   attempt: 3,
 };
-const getRandom = max => Math.floor(Math.random() * Math.floor(max));
+const getRandom = max => Math.floor(Math.random() * Math.floor(max)) + 1;
 const commonDiv = (a, b) => {
   if (!b) {
     return a;

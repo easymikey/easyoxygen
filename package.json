@@ -1,6 +1,6 @@
 {
   "name": "easyoxygen",
-  "version": "2.2.6",
+  "version": "2.2.7",
   "description": "\"my first project\"",
   "main": "dist/index.js",
   "bin": {

@@ -17,7 +17,7 @@ const calculateNumber = (a, b) => (message) => {
       throw new Error(`Unknown message '${message}'`);
   }
 };
-const makePair = (a, b) => calculateNumber(a, b);
+const makePair = (a, b) => calculateNuber(a, b);
 const sub = operands => operands('-');
 const add = operands => operands('+');
 const multi = operands => operands('*');

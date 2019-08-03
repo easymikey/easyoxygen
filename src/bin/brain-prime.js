@@ -1,4 +1,4 @@
 #!/usr/bin/env node
-import runPrime from '../games/prime';
+import brainPrime from '../games/prime';
 
-runPrime();
+brainPrime();

@@ -5,7 +5,7 @@ const ruleOfGame = {
   attempt: 3,
 };
 const getRandom = max => Math.floor(Math.random() * Math.floor(max));
-const calculateNuber = (a, b) => (message) => {
+const calculateNumber = (a, b) => (message) => {
   switch (message) {
     case '-':
       return a - b;

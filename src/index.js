@@ -12,9 +12,9 @@ const welcome = (str) => {
   console.log('');
 };
 
-const game = (name, attempt, generateQuestion) => {
+const game = (name, round, generateQuestion) => {
   const counter = (i) => {
-    if (i === attempt) {
+    if (i === round) {
       console.log(`Congratulations,${name}!`);
       return;
     }

@@ -12,14 +12,14 @@ const welcome = (str) => {
   console.log('');
 };
 
-const getAnswer = (name, attempt, generateRule) => {
+const game = (name, attempt, generateQuestion) => {
   const counter = (i) => {
     if (i === attempt) {
       console.log(`Congratulations,${name}!`);
       return;
     }
 
-    const [questionForUser, correctAnswer] = generateRule();
+    const [questionForUser, correctAnswer] = generateQuestion();
     console.log(`Question: ${questionForUser}`);
     const answer = readlineSync.question('Your answer: ');
 
@@ -37,13 +37,16 @@ const getAnswer = (name, attempt, generateRule) => {
   counter(0);
 };
 
-const runGame = (ruleOfGame, generateRule) => {
-  const { rule, attempt } = ruleOfGame;
-  welcome(rule);
+const runGame = (ruleOfGame, generateQuestion) => {
+  const round = 3;
+
+  welcome(ruleOfGame);
+
   const getName = userName();
   console.log(`Hello, ${getName}!`);
   console.log('');
-  getAnswer(getName, attempt, generateRule);
+
+  game(getName, round, generateQuestion);
 };
 
 export default runGame;

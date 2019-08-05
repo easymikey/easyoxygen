@@ -1,9 +1,7 @@
 import runGame from '..';
 
-const ruleOfGame = {
-  rule: 'What is the result of the expression?',
-  attempt: 3,
-};
+const ruleOfGame = 'What is the result of the expression?';
+
 const getRandom = max => Math.floor(Math.random() * Math.floor(max));
 const calculateNumber = (a, b) => (message) => {
   switch (message) {
@@ -23,7 +21,7 @@ const add = operands => operands('+');
 const multi = operands => operands('*');
 const randomChoice = arr => arr[Math.floor(Math.random() * arr.length)];
 
-const generateRule = () => {
+const generateQuestion = () => {
   const num1 = getRandom(100);
   const num2 = getRandom(100);
   const calc = randomChoice([sub, add, multi]);
@@ -46,4 +44,4 @@ const generateRule = () => {
   return [questionForUser, correctAnswer];
 };
 
-export default () => runGame(ruleOfGame, generateRule);
+export default () => runGame(ruleOfGame, generateQuestion);

@@ -23,7 +23,6 @@ const game = (name, round, generateQuestion) => {
     console.log(`Question: ${questionForUser}`);
     const answer = readlineSync.question('Your answer: ');
 
-
     if (correctAnswer === answer) {
       console.log('Correct!');
       console.log('');

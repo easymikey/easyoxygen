@@ -1,9 +1,6 @@
 import runGame from '..';
 
-const ruleOfGame = {
-  rule: 'What number is missing in the progression?',
-  attempt: 3,
-};
+const ruleOfGame = 'What number is missing in the progression?';
 const getRandom = max => Math.floor(Math.random() * Math.floor(max));
 const getProgression = (start, step, counter) => {
   const progression = [];
@@ -15,7 +12,7 @@ const getProgression = (start, step, counter) => {
   return progression;
 };
 
-const generateRule = () => {
+const generateQuestion = () => {
   const firstNum = getRandom(10);
   const step = getRandom(10);
   const counter = 10;
@@ -30,4 +27,4 @@ const generateRule = () => {
   return [questionForUser, correctAnswer];
 };
 
-export default () => runGame(ruleOfGame, generateRule);
+export default () => runGame(ruleOfGame, generateQuestion);

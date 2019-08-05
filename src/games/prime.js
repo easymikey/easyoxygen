@@ -20,5 +20,4 @@ const generateQuestion = () => {
   return [questionForUser, correctAnswer];
 };
 
-
 export default () => runGame(ruleOfGame, generateQuestion);

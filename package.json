@@ -1,6 +1,6 @@
 {
   "name": "easyoxygen",
-  "version": "2.3.0",
+  "version": "2.3.1",
   "description": "\"minigames By Mike Avdeev\"",
   "bin": {
     "brain-games": "dist/bin/brain-games.js",

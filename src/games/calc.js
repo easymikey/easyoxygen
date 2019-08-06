@@ -1,46 +1,34 @@
 import runGame from '..';
+import getRandom from '../utils';
 
 const ruleOfGame = 'What is the result of the expression?';
 
-const getRandom = max => Math.floor(Math.random() * Math.floor(max));
-const calculateNumber = (a, b) => (message) => {
-  switch (message) {
-    case '-':
-      return a - b;
-    case '+':
-      return a + b;
-    case '*':
-      return a * b;
-    default:
-      throw new Error(`Unknown message '${message}'`);
-  }
-};
-const makePair = (a, b) => calculateNumber(a, b);
-const sub = operands => operands('-');
-const add = operands => operands('+');
-const multi = operands => operands('*');
-const randomChoice = arr => arr[Math.floor(Math.random() * arr.length)];
-
 const generateQuestion = () => {
-  const num1 = getRandom(100);
-  const num2 = getRandom(100);
-  const calc = randomChoice([sub, add, multi]);
-  const showSing = (sing) => {
-    if (sing === multi) {
-      return '*';
-    }
-    if (sing === sub) {
-      return '-';
-    }
-    if (sing === add) {
-      return '+';
-    }
-    return 'operator is not defined';
+  const num1 = getRandom(2, 50);
+  const num2 = getRandom(2, 50);
+  const operationSing = {
+    '*': 'multi',
+    '+': 'add',
+    '-': 'sub',
   };
+  const calculateNumbers = (a, b) => (sing) => {
+    switch (sing) {
+      case '-':
+        return a - b;
+      case '+':
+        return a + b;
+      case '*':
+        return a * b;
+      default:
+        return `Unknown token ${sing}`;
+    }
+  };
+  const operation = Object.keys(operationSing);
+  const generateOperation = operation[getRandom(0, operation.length - 1)];
 
-  const questionForUser = `${num1} ${showSing(calc)} ${num2}`;
+  const questionForUser = `${num1} ${generateOperation} ${num2}`;
+  const correctAnswer = calculateNumbers(num1, num2)(generateOperation).toString();
 
-  const correctAnswer = calc(makePair(num1, num2)).toString();
   return [questionForUser, correctAnswer];
 };
 

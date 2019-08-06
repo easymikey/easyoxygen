@@ -1,8 +1,8 @@
 import runGame from '..';
+import getRandom from '../utils';
 
 const ruleOfGame = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
-const getRandom = max => Math.floor(Math.random() * Math.floor(max));
 const isPrime = (num) => {
   if (num < 2) {
     return false;
@@ -15,7 +15,7 @@ const isPrime = (num) => {
   return true;
 };
 const generateQuestion = () => {
-  const questionForUser = getRandom(100);
+  const questionForUser = getRandom(1, 50);
   const correctAnswer = isPrime(questionForUser) ? 'yes' : 'no';
   return [questionForUser, correctAnswer];
 };

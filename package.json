@@ -1,6 +1,6 @@
 {
   "name": "easyoxygen",
-  "version": "2.3.1",
+  "version": "2.3.2",
   "description": "\"minigames By Mike Avdeev\"",
   "bin": {
     "brain-games": "dist/bin/brain-games.js",
@@ -22,8 +22,11 @@
     "url": "git+https://github.com/easymikey/frontend-project-lvl1.git"
   },
   "keywords": [
-    "easyoxygen", "oxygen", "brain",
-    "minigames", "braingames"
+    "easyoxygen",
+    "oxygen",
+    "brain",
+    "minigames",
+    "braingames"
   ],
   "author": "Mike Avdeev",
   "license": "ISC",

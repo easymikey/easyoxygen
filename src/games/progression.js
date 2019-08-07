@@ -12,19 +12,19 @@ const getProgression = (start, step, length) => {
 
   return progression;
 };
+const length = 10;
 
-const generateQuestion = () => {
+const generateGameData = () => {
   const firstNum = getRandom(1, 10);
   const step = getRandom(0, 10);
-  const length = 10;
   const progression = getProgression(firstNum, step, length);
   const hideElementPossition = getRandom(1, length - 1);
 
   const correctAnswer = progression[hideElementPossition].toString();
   progression[hideElementPossition] = '..';
-  const questionForUser = progression.join(' ');
+  const question = progression.join(' ');
 
-  return [questionForUser, correctAnswer];
+  return [question, correctAnswer];
 };
 
-export default () => runGame(ruleOfGame, generateQuestion);
+export default () => runGame(ruleOfGame, generateGameData);

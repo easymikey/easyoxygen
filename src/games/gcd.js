@@ -9,12 +9,12 @@ const commonDiv = (a, b) => {
   }
   return commonDiv(b, a % b);
 };
-const generateQuestion = () => {
+const generateGameData = () => {
   const num1 = getRandom(1, 100);
   const num2 = getRandom(2, 100);
-  const questionForUser = `${num1} ${num2}`;
+  const question = `${num1} ${num2}`;
   const correctAnswer = commonDiv(num1, num2).toString();
-  return [questionForUser, correctAnswer];
+  return [question, correctAnswer];
 };
 
-export default () => runGame(ruleOfGame, generateQuestion);
+export default () => runGame(ruleOfGame, generateGameData);

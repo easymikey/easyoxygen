@@ -14,10 +14,10 @@ const isPrime = (num) => {
   }
   return true;
 };
-const generateQuestion = () => {
-  const questionForUser = getRandom(1, 50);
-  const correctAnswer = isPrime(questionForUser) ? 'yes' : 'no';
-  return [questionForUser, correctAnswer];
+const generateGameData = () => {
+  const question = getRandom(1, 50);
+  const correctAnswer = isPrime(question) ? 'yes' : 'no';
+  return [question, correctAnswer];
 };
 
-export default () => runGame(ruleOfGame, generateQuestion);
+export default () => runGame(ruleOfGame, generateGameData);

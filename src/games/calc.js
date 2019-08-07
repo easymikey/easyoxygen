@@ -2,34 +2,23 @@ import runGame from '..';
 import getRandom from '../utils';
 
 const ruleOfGame = 'What is the result of the expression?';
-
-const generateQuestion = () => {
-  const num1 = getRandom(2, 50);
-  const num2 = getRandom(2, 50);
-  const operationSing = {
-    '*': 'multi',
-    '+': 'add',
-    '-': 'sub',
-  };
-  const calculateNumbers = (a, b) => (sing) => {
-    switch (sing) {
-      case '-':
-        return a - b;
-      case '+':
-        return a + b;
-      case '*':
-        return a * b;
-      default:
-        return `Unknown token ${sing}`;
-    }
-  };
-  const operation = Object.keys(operationSing);
-  const generateOperation = operation[getRandom(0, operation.length - 1)];
-
-  const questionForUser = `${num1} ${generateOperation} ${num2}`;
-  const correctAnswer = calculateNumbers(num1, num2)(generateOperation).toString();
-
-  return [questionForUser, correctAnswer];
+const mathOperations = {
+  '*': (n1, n2) => n1 * n2,
+  '+': (n1, n2) => n1 + n2,
+  '-': (n1, n2) => n1 - n2,
 };
 
-export default () => runGame(ruleOfGame, generateQuestion);
+const generateGameData = () => {
+  const num1 = getRandom(2, 50);
+  const num2 = getRandom(2, 50);
+
+  const mathOperators = Object.keys(mathOperations);
+  const operator = mathOperators[getRandom(0, mathOperators.length - 1)];
+
+  const question = `${num1} ${operator} ${num2}`;
+  const correctAnswer = mathOperations[operator](num1, num2).toString();
+
+  return [question, correctAnswer];
+};
+
+export default () => runGame(ruleOfGame, generateGameData);

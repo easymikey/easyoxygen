@@ -1,51 +1,56 @@
 import readlineSync from 'readline-sync';
 
-export const userName = () => {
+export const getName = () => {
   const name = readlineSync.question('May I have your name? ');
   return name;
 };
 
-const welcome = (str) => {
+const greeting = (ruleOfGame) => {
   console.log('');
   console.log('Welcome to the Brain Games!');
-  console.log(str);
+  console.log(ruleOfGame);
   console.log('');
 };
+const numberOfRounds = 3;
 
-const game = (name, round, generateQuestion) => {
-  const counter = (i) => {
-    if (i === round) {
-      console.log(`Congratulations,${name}!`);
-      return;
-    }
-
-    const [questionForUser, correctAnswer] = generateQuestion();
-    console.log(`Question: ${questionForUser}`);
+const game = (round, generateGameData) => {
+  let i = 0;
+  while (i < round) {
+    const [question, correctAnswer] = generateGameData();
+    console.log(`Question: ${question}`);
     const answer = readlineSync.question('Your answer: ');
-
-    if (correctAnswer === answer) {
-      console.log('Correct!');
+    if (correctAnswer !== answer) {
       console.log('');
-      counter(i + 1);
-    } else {
-      console.log(`'${answer}' is wrong answer ;(. Correct answer is '${correctAnswer}'`);
-      console.log(`Let's try again, ${name}...`);
+      console.log(`'${answer}' is wrong answer ;(. Correct answer is '${correctAnswer}'.`);
+      return false;
+    }
+    console.log('Correct!');
+    console.log('');
+    i += 1;
+  }
+  if (i === round) {
+    return true;
+  }
+
+  return false;
+};
+
+const runGame = (ruleOfGame, generateGameData) => {
+  greeting(ruleOfGame);
+
+  const userName = getName();
+  console.log(`Hello, ${userName}!`);
+  console.log('');
+  const getResultOfGame = () => {
+    const resultOfGame = game(numberOfRounds, generateGameData);
+    if (resultOfGame === true) {
+      console.log(`Congratulations, ${userName}!`);
+    }
+    if (resultOfGame === false) {
+      console.log(`Let's try again, ${userName}...`);
     }
   };
-
-  counter(0);
-};
-
-const runGame = (ruleOfGame, generateQuestion) => {
-  const round = 3;
-
-  welcome(ruleOfGame);
-
-  const getName = userName();
-  console.log(`Hello, ${getName}!`);
-  console.log('');
-
-  game(getName, round, generateQuestion);
+  getResultOfGame();
 };
 
 export default runGame;

@@ -4,3 +4,5 @@
 [![Build Status](https://travis-ci.org/easymikey/frontend-project-lvl1.svg?branch=master)](https://travis-ci.org/easymikey/frontend-project-lvl1)
 
 [![asciicast](https://asciinema.org/a/261448.svg)](https://asciinema.org/a/261448)
+
+[![install size](https://packagephobia.now.sh/badge?p=easyoxygen@2.4.0)](https://packagephobia.now.sh/result?p=easyoxygen@2.4.0)

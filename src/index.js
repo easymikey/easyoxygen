@@ -14,25 +14,21 @@ const greeting = (ruleOfGame) => {
 const numberOfRounds = 3;
 
 const game = (round, generateGameData) => {
-  let i = 0;
-  while (i < round) {
+  for (let i = 0; i < round; i += 1) {
     const [question, correctAnswer] = generateGameData();
     console.log(`Question: ${question}`);
     const answer = readlineSync.question('Your answer: ');
+
     if (correctAnswer !== answer) {
-      console.log('');
       console.log(`'${answer}' is wrong answer ;(. Correct answer is '${correctAnswer}'.`);
+      console.log('');
       return false;
     }
     console.log('Correct!');
     console.log('');
-    i += 1;
-  }
-  if (i === round) {
-    return true;
   }
 
-  return false;
+  return true;
 };
 
 const runGame = (ruleOfGame, generateGameData) => {
@@ -41,16 +37,10 @@ const runGame = (ruleOfGame, generateGameData) => {
   const userName = getName();
   console.log(`Hello, ${userName}!`);
   console.log('');
-  const getResultOfGame = () => {
-    const resultOfGame = game(numberOfRounds, generateGameData);
-    if (resultOfGame === true) {
-      console.log(`Congratulations, ${userName}!`);
-    }
-    if (resultOfGame === false) {
-      console.log(`Let's try again, ${userName}...`);
-    }
-  };
-  getResultOfGame();
+  const resultOfGame = game(numberOfRounds, generateGameData);
+  const showGameResult = resultOfGame ? `Congratulations, ${userName}!` : `Let's try again, ${userName}...`;
+
+  console.log(`${showGameResult}`);
 };
 
 export default runGame;

@@ -10,3 +10,6 @@ publish:
 
 lint:
 	npx eslint .
+
+list:
+	node src/bin/commands.js ls

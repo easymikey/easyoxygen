@@ -1,5 +1,5 @@
 import colors from 'colors';
-import { types } './values';
+import { types } from './values';
 
 module.exports = function bar() {
   console.log('');

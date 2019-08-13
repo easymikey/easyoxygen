@@ -1,15 +1,15 @@
 import readlineSync from 'readline-sync';
 
-export const getName = () => {
+const getName = () => {
   const name = readlineSync.question('May I have your name? ');
   return name;
 };
 
 const greeting = (ruleOfGame) => {
-  console.log('');
+  console.log();
   console.log('Welcome to the Brain Games!');
   console.log(ruleOfGame);
-  console.log('');
+  console.log();
 };
 const numberOfRounds = 3;
 
@@ -21,11 +21,11 @@ const game = (round, generateGameData) => {
 
     if (correctAnswer !== answer) {
       console.log(`'${answer}' is wrong answer ;(. Correct answer is '${correctAnswer}'.`);
-      console.log('');
+      console.log();
       return false;
     }
     console.log('Correct!');
-    console.log('');
+    console.log();
   }
 
   return true;
@@ -36,9 +36,9 @@ const runGame = (ruleOfGame, generateGameData) => {
 
   const userName = getName();
   console.log(`Hello, ${userName}!`);
-  console.log('');
-  const resultOfGame = game(numberOfRounds, generateGameData);
-  const showGameResult = resultOfGame ? `Congratulations, ${userName}!` : `Let's try again, ${userName}...`;
+  console.log();
+  const isWin = game(numberOfRounds, generateGameData);
+  const showGameResult = isWin ? `Congratulations, ${userName}!` : `Let's try again, ${userName}...`;
 
   console.log(`${showGameResult}`);
 };

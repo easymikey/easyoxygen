@@ -1,10 +1,10 @@
 #!/usr/bin/env node
 
-const program = require('commander');
-const list = require('../list');
+import program from 'commander';
+import list from '../list';
 
 program
-  .command('lis')
+  .command('list')
   .alias('ls')
   .description('Game menu list')
   .action(() => {

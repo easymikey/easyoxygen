@@ -1,10 +1,10 @@
 
-exports.types = [
-  { name: 'Brain-calc       ', number: '#1' },
-  { name: 'Brain-even       ', number: '#2' },
-  { name: 'Brain-gcd        ', number: '#3' },
-  { name: 'Brain-prime      ', number: '#4' },
-  { name: 'Brain-progression', number: '#5' },
+exports.games = [
+  { number: '#1', name: 'brain-calc' },
+  { number: '#2', name: 'brain-even' },
+  { number: '#3', name: 'brain-gcd' },
+  { number: '#4', name: 'brain-prime' },
+  { number: '#5', name: 'brain-progression' },
 ];
 
-exports.typesPlain = exports.types.map(g => `${g.name} (${g.number})`);
+exports.getGame = exports.games.map(game => `${game.number} ${game.name}`);

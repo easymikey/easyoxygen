@@ -18,7 +18,6 @@ program
 
 program
   .command('menu')
-  .alias('-m')
   .description('output the game menu')
   .action(() => {
     menu();

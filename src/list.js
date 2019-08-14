@@ -1,7 +1,7 @@
 import colors from 'colors';
 import { games } from './values';
 
-module.exports = function showListOFGames() {
+export default () => {
   console.log('');
   console.log(' === CHOOSE THE GAME ==='.magenta.bold);
 

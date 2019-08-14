@@ -1,13 +1,12 @@
 import colors from 'colors';
-import { types } from './values';
+import { games } from './values';
 
-module.exports = function bar() {
+module.exports = function showListOFGames() {
   console.log('');
-  console.log('       CHOOSE A GAME        ');
-  console.log('----------------------------');
+  console.log(' === CHOOSE THE GAME ==='.magenta.bold);
 
-  types.forEach((type) => {
-    console.log('%s %s', colors.magenta.italic(`${type.name}`), colors.reset(`  ${type.number}`));
+  games.forEach((game) => {
+    console.log('%s %s', colors.reset(`${game.number}`), colors.reset(`  ${game.name}`));
   });
-  console.log('----------------------------');
+  console.log('='.repeat(25).magenta.bold);
 };

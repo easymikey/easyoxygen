@@ -1,48 +1,45 @@
-# Welcome to easyoxygen 👋
-![Version](https://img.shields.io/npm/v/easyoxygen.svg)
-[![Documentation](https://img.shields.io/badge/documentation-yes-brightgreen.svg)](https://github.com/easymikey/frontend-project-lvl1#readme)
-[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/easymikey/frontend-project-lvl1/graphs/commit-activity)
-[![License: ISC](https://img.shields.io/badge/License-ISC-yellow.svg)](https://github.com/easymikey/frontend-project-lvl1/blob/master/LICENSE)
+# Welcome to Easyoxygen 👋
+![Version](https://img.shields.io/npm/v/easyoxygen.svg) [![Documentation](https://img.shields.io/badge/documentation-yes-brightgreen.svg)](https://github.com/easymikey/frontend-project-lvl1#readme)   [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/easymikey/frontend-project-lvl1/graphs/commit-activity)  [![License: ISC](https://img.shields.io/badge/License-ISC-yellow.svg)](https://github.com/easymikey/easyoxygen/blob/master/LICENSE) [![Build Status](https://travis-ci.org/easymikey/frontend-project-lvl1.svg?branch=master)](https://travis-ci.org/easymikey/frontend-project-lvl1) [![Maintainability](https://api.codeclimate.com/v1/badges/bbacee2ad63205461ccb/maintainability)](https://codeclimate.com/github/easymikey/frontend-project-lvl1/maintainability)
 
-> &#34;minigames By Mike Avdeev&#34;
+> _Minigames By_ ***Mike Avdeev***
 
-### 🏠 [Homepage](https://github.com/easymikey/frontend-project-lvl1#readme)
+### 🏠 [Homepage](https://github.com/easymikey/easyoxygen#readme)
 
-## Install
+##  Installation
 
-```sh
+```bash
 npm install easyoxygen
-if you want to install global install use '-g'
-npm install -g easyoxygen
 ```
 
-## Usage
+## Usage and options
 
-```sh
-brain-calc        -- if you want to start game brain-calc
-brain-even        -- if you want to start game brain-even
-brain-gcd         -- if you want to start game brain-gcd
-brain-prime       -- if you want to start game brain-prime
-brain-progression -- if you want to start game brain-progression
-
-easyoxygen --help -- if you want to see list of commands
-easyoxygen --version  -- if you want to show app version
-easyoxygen ls|list -- if you want to see list of games
-easyoxygen menu -- if you want to play the games
-
+```bash
+easyoxygen ls|list   # output the list of games
+easyoxygen menu      # output the game menu
 ```
+
+##  Games  
+> You can use command ***easyoxygen menu*** for start the games  or use ***this*** commands for run it.
+* brain-calc --  **Calculate 2 numbers**
+* brain-even -- **Find the even number**
+ * brain-gcd -- **Find the greatest common divisor of 2 number** 
+* brain-prime -- **Find the prime number**
+* brain-progression  -- **Find the missing number of progression**
+***Examples of the games***    [click here](https://asciinema.org/a/261448)
 
 ## Author
 
-👤 **Mike Avdeev**
+👤 _**Mike Avdeev**_
 
 * Github: [@easymikey](https://github.com/easymikey)
+* npm: [@easymikey](https://www.npmjs.com/~easymikey)
+
 
 ## 🤝 Contributing
 
 Contributions, issues and feature requests are welcome!
 
-Feel free to check [issues page](https://github.com/easymikey/frontend-project-lvl1/issues).
+Feel free to check [issues page](https://github.com/easymikey/easyoxygen/issues).
 
 ## Show your support
 
@@ -53,4 +50,4 @@ Give a ⭐️ if this project helped you!
 
 Copyright © 2019 [Mike Avdeev](https://github.com/easymikey).
 
-This project is [ISC](https://github.com/easymikey/frontend-project-lvl1/blob/master/LICENSE) licensed.
+This project is [ISC](https://github.com/easymikey/easyoxygen/blob/master/LICENSE) licensed.

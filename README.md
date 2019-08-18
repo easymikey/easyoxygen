@@ -1,5 +1,5 @@
 # Welcome to Easyoxygen 👋
-![npm](https://img.shields.io/npm/v/easyoxygen) [![Documentation](https://img.shields.io/badge/documentation-yes-brightgreen.svg)](https://github.com/easymikey/easyoxygen#readme)   [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/easymikey/frontend-project-lvl1/graphs/commit-activity)  [![License: ISC](https://img.shields.io/badge/License-ISC-yellow.svg)](https://github.com/easymikey/easyoxygen/blob/master/LICENSE) [![Build Status](https://travis-ci.org/easymikey/frontend-project-lvl1.svg?branch=master)](https://travis-ci.org/easymikey/frontend-project-lvl1) [![Maintainability](https://api.codeclimate.com/v1/badges/bbacee2ad63205461ccb/maintainability)](https://codeclimate.com/github/easymikey/frontend-project-lvl1/maintainability)
+![npm](https://img.shields.io/npm/v/easyoxygen) [![Documentation](https://img.shields.io/badge/documentation-yes-brightgreen.svg)](https://github.com/easymikey/easyoxygen#readme)   [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/easymikey/frontend-project-lvl1/graphs/commit-activity)  [![License: ISC](https://img.shields.io/badge/License-ISC-yellow.svg)](https://github.com/easymikey/easyoxygen/blob/master/LICENSE) [![Build Status](https://travis-ci.org/easymikey/easyoxygen.svg?branch=master)](https://travis-ci.org/easymikey/easyoxygen) [![Maintainability](https://api.codeclimate.com/v1/badges/bbacee2ad63205461ccb/maintainability)](https://codeclimate.com/github/easymikey/frontend-project-lvl1/maintainability)
 
 > _Minigames By_ ***Mike Avdeev***
 
@@ -22,7 +22,7 @@ easyoxygen menu      # output the game menu
 > You can use command ***easyoxygen menu*** for start the games  or use ***this*** commands for run it.
 * brain-calc --  **Calculate 2 numbers**
 * brain-even -- **Find the even number**
- * brain-gcd -- **Find the greatest common divisor of 2 number** 
+* brain-gcd -- **Find the greatest common divisor of 2 number** 
 * brain-prime -- **Find the prime number**
 * brain-progression  -- **Find the missing number of progression**
 ***Examples of the games***    [click here](https://asciinema.org/a/261448)

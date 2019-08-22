@@ -1,4 +1,4 @@
-import runGame from '..';
+import runGame, { getSimpleGameData } from '..';
 import getRandom from '../utils';
 
 const ruleOfGame = 'Answer "yes" if given number is prime. Otherwise answer "no".';
@@ -14,10 +14,6 @@ export const isPrime = (num) => {
   }
   return true;
 };
-const generateGameData = () => {
-  const question = getRandom(1, 50);
-  const correctAnswer = isPrime(question) ? 'yes' : 'no';
-  return [question, correctAnswer];
-};
+const generateGameData = () => getSimpleGameData(isPrime, getRandom(0, 100));
 
 export default () => runGame(ruleOfGame, generateGameData);

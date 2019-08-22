@@ -3,7 +3,7 @@ import getRandom from '../utils';
 
 const ruleOfGame = 'Find the greatest common divisor of given number.';
 
-const findGcd = (a, b) => ((!b) ? a : findGcd(b, a % b));
+export const findGcd = (a, b) => ((!b) ? a : findGcd(b, a % b));
 
 const generateGameData = () => {
   const num1 = getRandom(1, 100);

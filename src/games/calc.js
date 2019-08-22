@@ -2,7 +2,7 @@ import runGame from '..';
 import getRandom from '../utils';
 
 const ruleOfGame = 'What is the result of the expression?';
-const mathOperations = {
+export const mathOperations = {
   '*': (n1, n2) => n1 * n2,
   '+': (n1, n2) => n1 + n2,
   '-': (n1, n2) => n1 - n2,

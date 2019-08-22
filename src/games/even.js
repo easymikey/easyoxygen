@@ -3,7 +3,7 @@ import getRandom from '../utils';
 
 const ruleOfGame = 'Answer "yes" if number even therwise answer "no"';
 
-const isEven = num => num % 2 === 0;
+export const isEven = num => num % 2 === 0;
 const generateGameData = () => {
   const question = getRandom(0, 100);
   const correctAnswer = isEven(question) ? 'yes' : 'no';

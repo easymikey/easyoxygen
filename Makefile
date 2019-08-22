@@ -15,3 +15,5 @@ list:
 
 menu:
 	npx babel-node src/bin/commands.js menu
+test:
+	npm test

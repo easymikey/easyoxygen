@@ -15,6 +15,7 @@
     "dist"
   ],
   "scripts": {
+    "test": "jest --colors",
     "build": "NODE_ENV=production babel src --out-dir dist --source-maps inline",
     "prepublishOnly": "npm run build"
   },
@@ -34,6 +35,9 @@
   "bugs": {
     "url": "https://github.com/easymikey/frontend-project-lvl1/issues"
   },
+  "jest": {
+    "testEnvironment": "node"
+  },
   "homepage": "https://github.com/easymikey/frontend-project-lvl1#readme",
   "devDependencies": {
     "@babel/cli": "^7.5.5",
@@ -46,6 +50,8 @@
     "eslint-plugin-babel": "^5.3.0",
     "eslint-plugin-import": "^2.18.2",
     "install": "^0.13.0",
+    "jest": "^24.9.0",
+    "jest-cli": "^24.9.0",
     "npm": "^6.10.2",
     "readme-md-generator": "^0.6.1"
   },

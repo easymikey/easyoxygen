@@ -13,6 +13,10 @@ const greeting = (ruleOfGame) => {
 };
 const numberOfRounds = 3;
 
+export const getSimpleGameData = (game, question) => {
+  const correctAnswer = game(question) ? 'yes' : 'no';
+  return [question, correctAnswer];
+};
 const game = (round, generateGameData) => {
   for (let i = 0; i < round; i += 1) {
     const [question, correctAnswer] = generateGameData();

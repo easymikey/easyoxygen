@@ -35,17 +35,8 @@
   "bugs": {
     "url": "https://github.com/easymikey/frontend-project-lvl1/issues"
   },
-  "jest": {
-    "testPathIgnorePatterns": [
-      "/node_modules/",
-      "/__fixtures__/"
-    ],
-    "coverageDirectory": "./",
-    "coverageReporters": [
-      "json",
-      "lcov",
-      "text"
-    ]
+   "jest": {
+    "testEnvironment": "node"
   },
   "homepage": "https://github.com/easymikey/frontend-project-lvl1#readme",
   "devDependencies": {

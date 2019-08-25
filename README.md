@@ -1,12 +1,12 @@
 # Welcome to Easyoxygen 
-[![Build Status](https://travis-ci.org/easymikey/easyoxygen.svg?branch=master)](https://travis-ci.org/easymikey/easyoxygen)[](https://codeclimate.com/github/easymikey/easyoxygen/maintainability)[](https://codeclimate.com/github/easymikey/easyoxygen/test_coverage) [![License: ISC](https://img.shields.io/badge/License-ISC-yellow.svg)](https://github.com/easymikey/easyoxygen/blob/master/LICENSE) [![tested with jest](https://img.shields.io/badge/tested_with-jest-99424f.svg)](https://github.com/facebook/jest)
+[![Build Status](https://travis-ci.org/easymikey/easyoxygen.svg?branch=master)](https://travis-ci.org/easymikey/easyoxygen)[](https://codeclimate.com/github/easymikey/easyoxygen/maintainability)[](https://codeclimate.com/github/easymikey/easyoxygen/test_coverage) [![License: ISC](https://img.shields.io/badge/License-ISC-yellow.svg)](https://github.com/easymikey/easyoxygen/blob/master/LICENSE) [![tested with jest](https://img.shields.io/badge/tested_with-jest-99424f.svg)](https://github.com/facebook/jest) [![Maintainability](https://api.codeclimate.com/v1/badges/a57707f4879e048adcb5/maintainability)](https://codeclimate.com/github/easymikey/easyoxygen/maintainability)
 
 
  _Minigames By_ ***Mike Avdeev***
 
 
 
-##  Installation and test
+##  Installation
 
 ```bash
 npm install easyoxygen

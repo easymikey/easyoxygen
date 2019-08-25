@@ -1,12 +1,12 @@
-# Welcome to Easyoxygen 👋
-![npm](https://img.shields.io/npm/v/easyoxygen) [![Documentation](https://img.shields.io/badge/documentation-yes-brightgreen.svg)](https://github.com/easymikey/easyoxygen#readme)   [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/easymikey/frontend-project-lvl1/graphs/commit-activity)  [![License: ISC](https://img.shields.io/badge/License-ISC-yellow.svg)](https://github.com/easymikey/easyoxygen/blob/master/LICENSE) [![Build Status](https://travis-ci.org/easymikey/easyoxygen.svg?branch=master)](https://travis-ci.org/easymikey/easyoxygen) [[![Maintainability](https://api.codeclimate.com/v1/badges/be37bd25738b8fed56e4/maintainability)](https://codeclimate.com/github/easymikey/easyoxygen/maintainability)[![Test Coverage](https://api.codeclimate.com/v1/badges/be37bd25738b8fed56e4/test_coverage)](https://codeclimate.com/github/easymikey/easyoxygen/test_coverage)
+# Welcome to Easyoxygen 
+[![Build Status](https://travis-ci.org/easymikey/easyoxygen.svg?branch=master)](https://travis-ci.org/easymikey/easyoxygen)[](https://codeclimate.com/github/easymikey/easyoxygen/maintainability)[](https://codeclimate.com/github/easymikey/easyoxygen/test_coverage) [![License: ISC](https://img.shields.io/badge/License-ISC-yellow.svg)](https://github.com/easymikey/easyoxygen/blob/master/LICENSE) [![tested with jest](https://img.shields.io/badge/tested_with-jest-99424f.svg)](https://github.com/facebook/jest)
 
 
-> _Minigames By_ ***Mike Avdeev***
+ _Minigames By_ ***Mike Avdeev***
 
-### 🏠 [Homepage](https://github.com/easymikey/easyoxygen#readme)
 
-##  Installation
+
+##  Installation and test
 
 ```bash
 npm install easyoxygen
@@ -29,14 +29,11 @@ easyoxygen menu      # output the game menu
 ***Examples of the games***    [click here](https://asciinema.org/a/261448)
 
 ## Author
-
-👤 _**Mike Avdeev**_
-
+_**Mike Avdeev**_
 * Github: [@easymikey](https://github.com/easymikey)
 * npm: [@easymikey](https://www.npmjs.com/~easymikey)
 
-
-## 🤝 Contributing
+##  Contributing
 
 Contributions, issues and feature requests are welcome!
 
@@ -44,10 +41,10 @@ Feel free to check [issues page](https://github.com/easymikey/easyoxygen/issues)
 
 ## Show your support
 
-Give a ⭐️ if this project helped you!
+Give a _**star**_ if this project helped you!
 
 
-## 📝 License
+##  License
 
 Copyright © 2019 [Mike Avdeev](https://github.com/easymikey).
 

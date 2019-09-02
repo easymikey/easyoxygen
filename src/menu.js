@@ -17,7 +17,7 @@ export default () => {
     .prompt(questions)
     .then((answers) => {
       console.log('='.repeat(38));
-      console.log('              starting...             '.toUpperCase().bgMagenta);
+      console.log(' '.repeat(14) + 'starting...'.toUpperCase().bgMagenta + ' '.repeat(14));
       console.log('='.repeat(38));
       switch (answers.gameType) {
         case '#1 brain-calc':

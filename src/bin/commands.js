@@ -13,7 +13,7 @@ program
   });
 
 program
-  .version('easyoxegen version 2.4.0')
+  .version('easyoxegen version 2.5.2')
   .description('minigames');
 
 program

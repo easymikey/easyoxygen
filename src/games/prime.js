@@ -14,6 +14,24 @@ export const isPrime = (num) => {
   }
   return true;
 };
+/* isPrige functional programming
+const isPrime = (num) => {
+  if (num < 2) {
+    return false;
+  }
+  const iter = (acc) => {
+    if (acc > num / 2) {
+      return true;
+    }
+    if (num % acc === 0) {
+      return false;
+    }
+
+    return iter(acc + 1);
+  };
+  return iter(2);
+};
+*/
 const generateGameData = () => getSimpleGameData(isPrime, getRandom(0, 100));
 
 export default () => runGame(ruleOfGame, generateGameData);

@@ -1,6 +1,5 @@
-# Welcome to Easyoxygen 
+# Welcome to Easyoxygen
 [![Build Status](https://travis-ci.org/easymikey/easyoxygen.svg?branch=master)](https://travis-ci.org/easymikey/easyoxygen)[](https://codeclimate.com/github/easymikey/easyoxygen/maintainability)[](https://codeclimate.com/github/easymikey/easyoxygen/test_coverage) [![License: ISC](https://img.shields.io/badge/License-ISC-yellow.svg)](https://github.com/easymikey/easyoxygen/blob/master/LICENSE) [![tested with jest](https://img.shields.io/badge/tested_with-jest-99424f.svg)](https://github.com/facebook/jest) [![Maintainability](https://api.codeclimate.com/v1/badges/a57707f4879e048adcb5/maintainability)](https://codeclimate.com/github/easymikey/easyoxygen/maintainability)
-
 
  _Minigames By_ ***Mike Avdeev***
 
@@ -19,11 +18,11 @@ easyoxygen ls|list   # output the list of games
 easyoxygen menu      # output the game menu
 ```
 
-##  Games  
+##  Games
 > You can use command ***easyoxygen menu*** for start the games  or use ***this*** commands for run it.
 * brain-calc --  **Calculate 2 numbers**
 * brain-even -- **Find the even number**
-* brain-gcd -- **Find the greatest common divisor of 2 number** 
+* brain-gcd -- **Find the greatest common divisor of 2 number**
 * brain-prime -- **Find the prime number**
 * brain-progression  -- **Find the missing number of progression**
 ***Examples of the games***    [click here](https://asciinema.org/a/261448)
